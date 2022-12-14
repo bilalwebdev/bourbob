@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&display=swap');
+@import "./_tailwind.css";
+
+.form-control {
+    @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight;
+
+    @apply border-none;
+}
+
+.btn {
+    @apply text-white py-2 px-4 rounded text-sm capitalize  items-center justify-center inline-block;
+}
+
+.btn-primary {
+    @apply bg-orange-500 shadow-md hover:shadow-orange-500/50  ease-in-out duration-300;
+}
+
+.product-pattren-bg {
+    @apply w-[20%]  min-h-screen shadow-2xl;
+    @apply bg-cover !important;
+    @apply bg-no-repeat !important;
+    @apply bg-center  !important;
+
+    background: url("https://images.pexels.com/photos/4544792/pexels-photo-4544792.jpeg?auto=compress&cs=tinysrgb&w=3456&h=5184&dpr=1");
+    /* background: url("https://images.unsplash.com/photo-1506213463051-7694f7a4b9e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"); */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply font-monst;
+}
+
+h1 {
+    @apply text-6xl;
+}
+
+h2 {
+    @apply text-5xl;
+}
+
+h3 {
+    @apply text-4xl;
+}
+
+h4 {
+    @apply text-3xl;
+}
+
+h5 {
+    @apply text-2xl;
+}
+
+h6 {
+    @apply text-xl;
+}
+
+p {
+    @apply font-lato;
+}
+
+.notes-pill {
+    @apply flex justify-start py-1 px-2 cursor-pointer text-gray-500;
+    @apply hover:bg-orange-500 hover:text-white rounded-full hover:shadow-orange-500 hover:shadow-lg;
+    @apply transition ease-in-out delay-75;
+}
+
+.m-transition {
+    @apply transition ease-in-out delay-75;
+}
+
+.in-straight-line {
+    @apply inline-block overflow-hidden whitespace-nowrap;
+}
+
+.filter-checkbox {
+    @apply rounded  checked:bg-orange-500 shadow-lg focus:ring-0 focus:outline-none;
+
+    @apply text-orange-500;
+}
+
+.r-text {
+    @apply text-7xl font-extrabold absolute;
+
+    transform-origin: bottom left;
+    left: 0;
+    bottom: 0;
+    transform: rotate(-90deg) translateY(100%);
+    -webkit-transform: rotate(-90deg) translateY(100%);
+    -moz-transform: rotate(-90deg) translateY(100%);
+    -ms-transform: rotate(-90deg) translateY(100%);
+    -o-transform: rotate(-90deg) translateY(100%);
+}
